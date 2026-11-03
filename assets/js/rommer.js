@@ -85,7 +85,7 @@
     }
     return d + "Z";
   }
-  var FD = "font-family:'Rommer Display',Fredoka,sans-serif;font-stretch:125%;font-weight:700";
+  var FD = "font-family:Blur,'Rommer Display',Fredoka,sans-serif;font-stretch:125%;font-weight:700";
   var STICKERS = {
     smiley: '<svg viewBox="0 0 140 140"><circle cx="70" cy="70" r="66" fill="#FFE500"/><g style="' + FD + '" fill="#1B1B1B" font-size="17" text-anchor="middle"><text x="70" y="44">HAIRCARE</text><text x="70" y="62">BUT MAKE</text><text x="34" y="80" text-anchor="start">IT</text><text x="106" y="80" text-anchor="end">FUN</text></g><path d="M38 90 Q70 126 102 90" fill="none" stroke="#1B1B1B" stroke-width="5" stroke-linecap="round"/></svg>',
     approved: '<svg viewBox="0 0 220 120"><g transform="rotate(-8 110 60)"><ellipse cx="110" cy="60" rx="104" ry="48" fill="#EB2600" stroke="#2A2A2A" stroke-width="7"/><g style="' + FD + '" fill="#2A2A2A" text-anchor="middle"><text x="110" y="56" font-size="30">ROMMER</text><text x="110" y="86" font-size="30">APPROVED</text></g></g></svg>',
