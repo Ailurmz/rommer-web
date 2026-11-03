@@ -6,8 +6,15 @@
    ========================================================= */
 
 /* ---------- Fuentes ----------
-   "Rommer Display" es un REEMPLAZO PROVISORIO de Blur (Fredoka variable).
-   Cuando llegue blur.woff2, cambiar sólo las dos src de abajo. */
+   Blur Medium: tipografía display de la marca (títulos).
+   El archivo actual no tiene J, W, Z, j, k, w, z, ñ, Ñ ni números:
+   esos caracteres se completan con "Rommer Display" (Fredoka).
+   Al recibir la fuente completa, reemplazar blur-medium.woff2. */
+@font-face {
+  font-family: "Blur";
+  src: url("../fonts/blur-medium.woff2") format("woff2");
+  font-weight: 100 900; font-style: normal; font-display: swap;
+}
 @font-face {
   font-family: "Rommer Display";
   src: url("../fonts/fredoka-latin-standard-normal.woff2") format("woff2");
@@ -45,7 +52,7 @@
   --red: #EB2600;
   --muted: #6B645A;
 
-  --f-display: "Rommer Display", "Fredoka", ui-rounded, system-ui, sans-serif;
+  --f-display: "Blur", "Rommer Display", "Fredoka", ui-rounded, system-ui, sans-serif;
   --f-body: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
 
   --r-sm: 14px;
@@ -81,7 +88,7 @@ input, select { font: inherit; }
 /* ---------- Tipografía ---------- */
 .display {
   font-family: var(--f-display); font-weight: 600; font-stretch: 125%;
-  line-height: .92; letter-spacing: -.01em; text-transform: uppercase; margin: 0;
+  line-height: .95; letter-spacing: 0; text-transform: uppercase; margin: 0;
 }
 .display--lower { text-transform: none; letter-spacing: -.02em; }
 .h-xl { font-size: clamp(2.6rem, 7.5vw, 7.5rem); }
